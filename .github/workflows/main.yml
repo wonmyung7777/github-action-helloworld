@@ -8,4 +8,5 @@ jobs:
       - name: make
         run: make
       - name: print
-        run: ./main
+        if: ./main == "Hello World"
+        run: echo "PASS"
