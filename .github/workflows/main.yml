@@ -4,7 +4,9 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Fetch
+        run: actions/checkout@master
       - name: make
-        run: make main
+        run: make
       - name: print
-        run: echo "Hello World"
+        run: ./main
