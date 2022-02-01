@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch
-        run: actions/checkout@master
+        run: actions/checkout@v2
       - name: make
         run: make
       - name: print
